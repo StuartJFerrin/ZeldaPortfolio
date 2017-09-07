@@ -1,6 +1,6 @@
 .reference {
     position: absolute;
-    height: 950px;
+    height: 660px;
     z-index: 10;
     pointer-events: none;
     opacity: .3;
@@ -23,16 +23,36 @@ body * {
     left: 0;
     border: 5px solid red;
     display: grid;
+    grid-template-columns: 114px 1fr 114px;
+    grid-template-rows: 55px 1fr 45px;
 }
 
 .top {
 background-color: green;
 }
 
+.left {
+    background-color: orangered;
+    grid-row-end: span 3;
+}
 .center {
 background-color: blue;
+grid-row-start: 2;
+grid-column-start: 2;
+border-width: 77px 77px 43px 77px;
+border-color: black;
+border-style: solid;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr ;
 }
 
+.right {
+    background-color: purple;
+    grid-row-end: span 3;
+}
 .bottom {
 background-color: yellow;
+grid-row-start: 3;
+grid-column-start: 2;
 }
