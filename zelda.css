@@ -1,6 +1,6 @@
 .reference {
     position: absolute;
-    height: 660px;
+    height: 630px;
     z-index: 10;
     pointer-events: none;
     opacity: .3;
@@ -21,15 +21,83 @@ body * {
     right: 0;
     bottom: 0;
     left: 0;
-    border: 5px solid red;
     display: grid;
     grid-template-columns: 114px 1fr 114px;
     grid-template-rows: 55px 1fr 45px;
 }
 
 .top {
-background-color: green;
+background-color: purple;
+display: grid;
+grid-template-columns: 41% 12% 12% 12% 25%;;
+grid-template-rows: 1fr 1fr;
 }
+
+.hearts {
+    background: yellow;
+    padding-top: 1.4px;
+    padding-left: 1.4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: relative;
+    left: -38px;
+
+}
+.heart {
+    background: red;
+    width: 33px;
+    height: 28px;
+    margin-bottom: 4px;
+    margin-right: 1.4px;
+}
+
+.magicMeter {
+    background-color: white;
+    grid-row-start: 2;
+    position: relative;
+    top: 20px;
+    left: -40px;
+}
+
+.redButton {
+background-color: red;
+color: white;
+width: 66px;
+height: 66px;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+position: relative;
+
+}
+
+.blueButton {
+background-color: blue;
+color: white;
+width: 75px;
+height: 75px;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+position: relative;
+}
+
+.greenButton {
+    background-color: green;
+    color: white;
+    width: 75px;
+    height: 75px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.arrowButtons {
+    background-color: yellow;
+}
+
 
 .left {
     background-color: orangered;
@@ -45,6 +113,17 @@ border-style: solid;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
 grid-template-rows: 1fr 1fr 1fr 1fr ;
+padding: 10px;
+}
+
+.item {
+    background-color: red;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 90px;
+    width: 90px;
+
 }
 
 .right {
